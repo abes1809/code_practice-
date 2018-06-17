@@ -1,0 +1,13 @@
+// Simple, given a string of words, return the length of the shortest word(s).
+
+// String will never be empty and you do not need to account for different data types.
+
+function shortest_word(string) {
+	var array = string.split(" ");
+
+	var min = Math.min.apply(Math, array.map(function(str) { return str.length; }));
+	console.log(min);
+
+}
+
+shortest_word("There once was a girl");
