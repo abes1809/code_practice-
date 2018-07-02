@@ -1,0 +1,10 @@
+function findNextSquare(number) {
+  var sqr = Math.sqrt(number);
+  if(sqr % 1 === 0){
+  	var newSqr = (sqr + 1) * (sqr + 1)
+  	return newSqr;
+  }
+  else {
+  	return -1;
+  }
+}
