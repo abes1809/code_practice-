@@ -1,0 +1,63 @@
+// Your task is to sort a given string. Each word in the String will contain a single number. This number is the position the word should have in the result.
+
+// Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
+
+// If the input String is empty, return an empty String. The words in the input String will only contain valid consecutive numbers.
+
+// For an input: "is2 Thi1s T4est 3a" the function should return "Thi1s is2 3a T4est"
+
+function order(words){
+  var numbers = [1,2,3,4,5,6,7,8,9];
+
+  var array = words.split("");
+  var numbers = [];
+  var indexes = []; 
+  console.log(array);
+
+  for (var i = 0; i <= array.length; i++) {
+  	var test = parseFloat(array[i]);
+  	// console.log(test);
+  	if (test > 0) {
+  		numbers.push(array[i]);
+  		indexes.push(i);
+  	}
+  }
+  console.log(numbers);
+  numbers.sort();
+
+  for (var i = 0; i <= numbers.length; i++) {
+  	array.replace();
+  }
+  
+  console.log(indexes);
+  console.log(array.toString());
+
+  return array.toString()
+
+	// var arr = words.split(" ");
+	// console.log(arr); //[ 'is2', 'This1s', 'T4est', '3a' ]
+	 
+	// var result = []; //initializing a container for our result
+	// var number; //will be used as an index to populate our result array with the sorted array elements
+	// for(var i = 0; i < arr.length; i++){
+	 
+	 
+	// 	for(var j =0; j < arr[i].length; j++){
+	// 		//double-negation to check that arr[i][j] is a "number"
+	// 		if(!isNaN(arr[i][j]) ){
+	// 			//if it is, we call it what it is, "a number"
+	// 			number = arr[i][j];
+	// 			//index number of result is populated with the word we got the bit from: arr[i]
+	// 			result[number] = arr[i];
+	// 			//we break. we are only interested in this opeation taking place once per word
+	// 			break;
+				
+	// 		}
+	// 	}
+	// }
+
+	// result = result.toString()
+		
+}
+
+console.log(order("3el2o"))
