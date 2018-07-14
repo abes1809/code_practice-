@@ -16,7 +16,7 @@ def FizzBuzz()
 	end 
 end
 
-puts FizzBuzz()
+# puts FizzBuzz()
 
 def FizzBuzz2()
 	101.times do |i|
@@ -36,5 +36,24 @@ def FizzBuzz2()
 
 end
 
-puts FizzBuzz2()
+# puts FizzBuzz2()
+
+def FizzBuzz3()
+	101.times do |i|
+		output = ""
+
+		if i % 3 == 0 
+			output += "Fizz"
+		end 
+		if i % 5 == 0 
+			output += "Buzz"
+		end 
+		if i % 3 != 0 && i % 5 != 0
+			output = i
+		end 
+		puts output
+	end 
+
+end
+
 
