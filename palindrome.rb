@@ -6,11 +6,12 @@ def palindrome?(string)
 	string.length.times do |i|
 		char = string[i]
 
-		if unpaired_characters.include? char 
+		if unpaired_characters.include?(char) 
 			unpaired_characters.delete(char)
 		else 
 			unpaired_characters.push(char)
 		end 
+		print unpaired_characters
 	end 
 
 	if unpaired_characters.length > 1
