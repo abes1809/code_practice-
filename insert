@@ -1,0 +1,51 @@
+// # . Write a function that accepts two arguments. The first argument is an array of numbers that are in ascending order. The second argument is a new number that is not yet in the array. The function should return a new array with the new number inserted in the proper place. Do not use the “sort” method!
+
+// # binary search
+// # def insert(array, number)
+// # 	first = 0
+// # 	last = array.length - 1 
+
+// # 	while first <= last
+// #         midpoint = (first + last) / 2
+// #         if array[midpoint] == number
+// #             position = midpoint
+// #         elsif array[midpoint] > number
+// #             last = midpoint - 1
+// #         elsif array[midpoint] < number
+// #             first = midpoint + 1
+// #         end
+// #     end
+// # end 
+
+// # print insert([1,2,3,5,6,7], 4)
+
+// # def insert(array, number)
+// # 	array.each do |i|
+// # 		if array[i] > number
+// # 			array.insert(i, number)
+// # 			break
+// # 		elsif i == (array.length - 1)
+// # 			array.push(number)
+// # 			break
+// # 		end 
+// # 	end 
+// # 	array
+// # end
+// # print insert([1,2,3,4,5,6,7,8], 9) 
+
+// function insert(array, number){
+// 	for (var i = 0; i <= array.length; i++) {
+// 		if (array[i] > number) {
+// 			array.splice(i, 0, number);
+// 			break;
+// 		}
+// 		else if (i === (array.length - 1)) {
+// 			array.push(number);
+// 			// break;
+// 		}
+// 	}
+// 	array
+// }
+
+
+// console.log(insert([1,2,3,4,5,6,7], 3))

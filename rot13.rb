@@ -9,9 +9,12 @@ def rot13(secret_messages)
  new_string = ""  
  letters = ('a'..'z').to_a
     secret_messages.length.times do |letter|
-        index = letter.index(secret_messages[letter].to_s)
-        index += 13
-        new_string += letters[index]
+        letter_location =  letters.each_index.detect{|i| secret_messages[letter] == letters[i]}
+        puts letter_location
+        # puts "index"
+        # puts letter_location += 13
+        # new_string += letters[index]
+        # puts new_string
     end 
     new_string
 end

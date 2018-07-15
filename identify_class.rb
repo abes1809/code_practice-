@@ -1,0 +1,40 @@
+# This is a bonus question. Feel free to skip to the next challenge.
+
+# HackerRank is written in RoR and we have various classes defined in it. Some of them are
+
+# Hacker
+# Submission
+# TestCase
+# Contest
+# etc.
+
+# You have been given a function where an object which may or may not be of the above mentioned type is sent as an argument. You have to use the case control structure in Ruby to identify the class to which the object belongs and print the following output:
+
+# if Hacker, output "It's a Hacker!"
+# if Submission, output "It's a Submission!"
+# if TestCase, output "It's a TestCase!"
+# if Contest, output "It's a Contest!"
+# for any other object, output "It's an unknown model"
+# Note
+
+# use case (switch statement of Ruby)
+# use puts for printing
+# Ruby Docs on case
+
+def identify_class(obj)
+
+	type = obj.class 
+
+	if type == Hacker
+		puts "It's a Hacker!"
+	elsif type == Submission
+		puts "It's a Submission!"
+	elsif type == Contest
+		puts "It's a Contest!"
+	elsif type == TestCase
+		puts "It's a TestCase!"
+	else 
+		puts "It's an unknown model"
+	end 
+   
+end
